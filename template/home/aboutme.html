@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="./public/css/ann.css" type="text/css"/>
+<style>
+    .font_highlight {
+        color: #FF5C5C;
+    }
+    .heimu{
+        background-color: #252525;
+        color: #252525;
+        transition: color 0.5s;
+    }
+    .heimu:hover{
+        color: #ffffff;
+    }
+</style>
+<script src="./public/js/ajax.js" type="text/javascript"></script>
+<div id="Frame" class="shadow center">
+    <div id="ann" class="shadow ann fade">
+        <div id="container" style=" width: 870px; height: 450px;max-height: 450px;maxHeightIE: 450px; overflow: hidden;">
+            <div id="content">
+                <div style="padding: 70px;">
+                    <img src="./public/images/ShiinaMashiro.png" width="131px" height="300px" style="float: left;">
+                    <div style="font-size: 20px;padding-left: 40px;line-height: 34px;letter-spacing: 1px;">
+                        <br>
+                        <br>主人介绍：Pi_huang
+                        <br>性温和，天然呆、有极度的依赖性。完全没有一点自理能力，连饭都要人喂。
+                        <br>喜爱吃，能吃。
+                        <br>但对外界的反应迟钝，缺乏生活常识。
+                        <br>详细资料↓↓
+                    </div>
+                    <div style="font-size: 20px;padding-left: 40px;line-height: 34px;letter-spacing: 1px;">
+                        <br>
+                        <br>关于<span class="font_highlight">心机大黄不会受伤</span>
+                        <br>姓名：<span class="font_highlight">Pi_huang</span>
+                        <br>年龄：<span class="font_highlight">14<span class="heimu" title="你知道的太多了">第5周目？</span></span>
+                        <br>居住：<span class="font_highlight">蓝星</span>
+                        <br>能力：<span class="font_highlight">lv0</span>
+                        <br>属性：<span class="font_highlight">萝莉，腹黑，天然呆，虎牙，贫乳</span>
+                        <br>
+                        <br><span class="font_highlight">上手</span>绝活
+                        <br><span class="font_highlight">忽悠</span>诈骗
+                        <br><span class="font_highlight">DD</span>单推人
+                        <br><span class="font_highlight">啊↑哈↓</span>空露露
+                    </div>
+                    <div style="text-align: right">
+                        <img src="./public/images/Ann_momizi.png" width="157px" height="170px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ann_added_frame" class="shadow fade">
+        <a href="./test.html" id="icon_bbs" class="icon bbs" title="进入主站"><img src="./public/images/bbs.png" alt="bbs"/></a>
+        <a href="#" id="icon_home" class="icon home" onclick="setTimeout('flanHome.frame_turn.start()',500);Frame_exit()" title="返回引导页"><img src="./public/images/home.png" alt="home"/></a>
+    </div>
+</div>
+<script type="text/javascript">
+    $(makeTextView("#container", "#content").change().scrollTo(0));
+</script>

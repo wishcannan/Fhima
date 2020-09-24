@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="landscape"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>樱花庄の宿舍</title>
+    <link rel="stylesheet" href="./public/css/leadpage.css" type="text/css">
+    <script type="text/javascript" src="./public/js/jquery-1.7.2.js"></script>
+    <script src="./public/js/moon_palace.anime.js" type="text/javascript"></script>
+    <script src="./public/js/ajax.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./public/js/jquery-ui-1.8.21.custom.min.js"></script>
+</head>
+<body><div id="spirit-panel" style="display: block; position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; z-index: -1;"><img src="./public/images/spirits.png" class="" style="position: absolute; top: -100px; left: -100px; width: 50px; height: 50px; transform: translate(1496px, 415.4px); opacity: 1;"><img src="./public/images/spirits.png" class="velocity-animating" style="position: absolute; top: -100px; left: -100px; width: 40px; height: 40px; transform: translate(1026px, 663.994px); opacity: 1;"><img src="./public/images/spirits.png" class="velocity-animating" style="position: absolute; top: -100px; left: -100px; width: 30px; height: 30px; transform: translate(835px, 482.139px); opacity: 1;"><img src="./public/images/spirits.png" class="" style="position: absolute; top: -100px; left: -100px; width: 10px; height: 10px; transform: translate(-100px, 466.4px); opacity: 1;"><img src="./public/images/spirits.png" class="" style="position: absolute; top: -100px; left: -100px; width: 10px; height: 10px; transform: translate(1496px, 230.4px); opacity: 1;"><img src="./public/images/spirits.png" class="" style="position: absolute; top: -100px; left: -100px; width: 10px; height: 10px; transform: translate(-100px, 155.4px); opacity: 1;"><img src="./public/images/spirits.png" class="" style="position: absolute; top: -100px; left: -100px; width: 20px; height: 20px; transform: translate(1496px, 161.4px); opacity: 1;"><img src="./public/images/spirits.png" class="velocity-animating" style="position: absolute; top: -100px; left: -100px; width: 20px; height: 20px; transform: translate(1120px, 198.656px); opacity: 1;"><img src="./public/images/spirits.png" class="velocity-animating" style="position: absolute; top: -100px; left: -100px; width: 30px; height: 30px; transform: translate(1129px, 370.494px); opacity: 1;"><img src="./public/images/spirits.png" class="velocity-animating" style="position: absolute; top: -100px; left: -100px; width: 40px; height: 40px; transform: translate(63px, 170.916px); opacity: 1;"><img src="./public/images/spirits.png" class="velocity-animating" style="position: absolute; top: -100px; left: -100px; width: 10px; height: 10px; transform: translate(1488px, 152.606px); opacity: 1;"><img src="./public/images/spirits.png" class="" style="position: absolute; top: -100px; left: -100px; width: 20px; height: 20px; transform: translate(-100px, 527.4px); opacity: 1;"><img src="./public/images/spirits.png" class="" style="position: absolute; top: -100px; left: -100px; width: 20px; height: 20px; transform: translate(1496px, 246.4px); opacity: 1;"><img src="./public/images/spirits.png" class="velocity-animating" style="position: absolute; top: -100px; left: -100px; width: 10px; height: 10px; transform: translate(534px, 485.937px); opacity: 1;"><img src="./public/images/spirits.png" class="" style="position: absolute; top: -100px; left: -100px; width: 10px; height: 10px; transform: translate(-100px, 428.4px); opacity: 1;"><img src="./public/images/spirits.png" class="velocity-animating" style="position: absolute; top: -100px; left: -100px; width: 20px; height: 20px; transform: translate(743px, 497.431px); opacity: 1;"><img src="./public/images/spirits.png" class="velocity-animating" style="position: absolute; top: -100px; left: -100px; width: 10px; height: 10px; transform: translate(6px, 523.741px); opacity: 1;"><img src="./public/images/spirits.png" class="" style="position: absolute; top: -100px; left: -100px; width: 10px; height: 10px; transform: translate(1496px, 238.4px); opacity: 1;"><img src="./public/images/spirits.png" class="" style="position: absolute; top: -100px; left: -100px; width: 10px; height: 10px; transform: translate(-100px, 141.4px); opacity: 1;"><img src="./public/images/spirits.png" class="" style="position: absolute; top: -100px; left: -100px; width: 10px; height: 10px; transform: translate(-100px, 441.4px); opacity: 1;"></div>
+<style>
+    body {
+        background: url(./public/images/background-1.png);
+        background-size: cover;
+    }
+</style>
+<div class="frame_shake">
+    <div id="frame_turn" class="frame_turn center">
+        <div id="Frame" class="shadow center Frame">
+            <div style="margin: 0 10px;">
+
+                <li id="choose_card_1" class="shadow card_1 choose_card" exit-anime="card_exit_1">
+                    <a href="#" onclick="exit();flanHome.frame_turn.stop()" class="card_hover">
+                        <div class="card_hover_font" style="color: #4E9BFC;">原主人介绍</div>
+                    </a>
+                    <a href="#" onclick="exit();flanHome.frame_turn.stop()" style="background-image: url(&#39;./public/images/card_1.jpg&#39;);cursor:no-drop;" class="card_img card_img1"></a>
+                </li>
+                <li id="choose_card_2" class="shadow card_2 choose_card" exit-anime="card_exit_2">
+                    <a href="#" onclick="exit();flanHome.frame_turn.stop()" class="card_hover">
+                        <div class="card_hover_font" style="color: #FF7B7B;">椎名真白</div>
+                    </a>
+                    <a href="#" onclick="exit();flanHome.frame_turn.stop()" style="background-image: url(&#39;./public/images/card_2.jpg&#39;);cursor:no-drop;" class="card_img card_img2"></a>
+                </li>
+
+                <li id="choose_card_3" class="shadow card_3 choose_card" exit-anime="card_exit_1">
+                    <a href="./wushiyin.html" class="card_hover">
+                        <div class="card_hover_font" style="color: #8c899c;">康娜卡姆依</div>
+                    </a>
+                    <a href="./wushiyin.html" style="background-image: url(&#39;./public/images/card_3.jpg&#39;); cursor:no-drop;" class="card_img card_img3"></a>
+                </li>
+
+                <li id="choose_card_4" class="shadow card_4 choose_card" exit-anime="card_exit_2">
+                    <a target="_blank" href="./test.html" class="card_hover">
+                        <div class="card_hover_font" style="color: #f35961;">和泉纱雾</div>
+                    </a>
+                    <a href="./test.html" style="background-image: url(&#39;./public/images/card_4.jpg&#39;); cursor:no-drop;" class="card_img card_img4"></a>
+                </li>
+
+                <li id="choose_card_5" class="shadow card_5 choose_card" exit-anime="card_exit_1">
+                    <a target="_blank" href="./test.html" class="card_hover">
+                        <div class="card_hover_font" style="color: #a7e3b8;">艾米莉亚</div>
+                    </a>
+                    <a href="./test.html" style="background-image: url(&#39;./public/images/card_5.jpg&#39;); cursor:no-drop;" class="card_img card_img5"></a>
+                </li>
+
+                <li id="choose_card_6" class="shadow card_6 choose_card" exit-anime="card_exit_2">
+                    <a target="_blank" href="./test.html" class="card_hover">
+                        <div class="card_hover_font" style="color: #9ad0fb;">加贺</div>
+                    </a>
+                    <a href="./test.html" style="background-image: url(&#39;./public/images/card_6.jpg&#39;);cursor:no-drop;" class="card_img card_img6"></a>
+                </li>
+
+                <li id="choose_card_7" class="shadow card_7 choose_card" exit-anime="card_exit_1">
+                    <a href="./test.html" class="card_hover">
+                        <div class="card_hover_font" style="color: #62c462;">雷姆</div>
+                    </a>
+                    <a href="./test.html" style="background-image: url(&#39;./public/images/card_7.jpg&#39;);cursor:no-drop;" class="card_img card_img7"></a>
+                </li>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div style="position: fixed;bottom: 0;left: -5px;width: 500px;height: 24px;"></div>-->
+<div class="example">
+    <ul class="playlist">
+        <li audiourl="1.mp3" cover="zuye.png" artist="沢井美空" class="active">卒業メモリーズ~サヨナラ、あな</li>
+        <li audiourl="2.mp3" cover="yhz.png" artist="大仓明日香">Prime number~君と出会える日</li>
+        <li audiourl="3.mp3" cover="shengyin.png" artist="乃木坂46">今、話したい誰かがいる日</li>
+        <li audiourl="4.mp3" cover="xiaoxin.png" artist="决明子">友よ ~ この先もずっと</li>
+        <li audiourl="5.mp3" cover="jiahe.png" artist="井口裕香">加賀岬</li>
+    </ul>
+    <div class="player">
+        <div class="pl"></div>
+        <div class="title">卒業メモリーズ~サヨナラ、あな</div>
+        <div class="artist">沢井美空</div>
+        <div class="cover" style="background-image: url(&quot;./public/images/zuye.png&quot;);"></div>
+        <div class="controls">
+            <div class="play hidden"></div>
+            <div class="pause visible"></div>
+            <div class="rew"></div>
+            <div class="fwd"></div>
+        </div>
+        <div class="volume ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 100%;"></a></div>
+        <div class="tracker ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-min" style="width: 0%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a></div>
+    </div>
+</div>
+<script type="text/javascript" src="./public/js/main.js"></script>
+<script type="text/javascript">
+    // window.onload = function () {
+    //     $('.play').click();
+    // }
+    // function()
+</script>
+<!--<script type='text/javascript'>-->
+<!--    var mslppurl = 'http://blog.yhzlove.com:880/wp-content/plugins/moesem-leadpage/';-->
+<!--</script>-->
+<!-- 背景荧光 -->
+<script type="text/javascript" src="./public/js/spirits.js"></script>
+
+<div id="powerTip" style="top: 121px; left: 213px; right: auto; bottom: auto;"></div></body></html>

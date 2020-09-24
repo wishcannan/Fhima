@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html class="landscape">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./public/js/jquery-1.7.2.js"></script>
+    <script>
+        var data = {
+            'temperature':'',
+            'place':'',
+            'date':''
+        };
+        window.onload = function() {
+            let url = "api/weather";
+            $.get(url, function(data) {
+                $('#tem').html(data['Temperaturer']);
+		$('#place').html(data['Place']);
+            });
+        };
+    </script>
+    <title>测试</title>
+
+</head>
+    <body>
+            别看了 没有
+	    <span>place:<b id="place"></b></span>
+	    <span>temperature:<b id="tem"></b></span>
+	    <p>{{.Temperaturer}}</p>
+    </body>
+</html>
